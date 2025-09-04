@@ -59,6 +59,7 @@ jar {
 
 modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
+	versionName = "CS:GO Inspects ${version}"
 	projectId  = project.archives_base_name
 	uploadFile = remapJar
 	changelog = System.getenv("CHANGELOG")
