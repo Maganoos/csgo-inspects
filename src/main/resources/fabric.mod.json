@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "csgo-inspects",
+	"version": "${version}",
+	"name": "CS:GO Inspects",
+	"description": "Inspects your items, similar to CS:GO",
+	"authors": [
+		"Maganoos"
+	],
+	"contact": {
+		"homepage": "https://magkari.eu/",
+		"sources": "https://github.com/Maganoos/csgo-inspects"
+	},
+	"license": "MIT",
+	"icon": "assets/csgo-inspects/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"eu.magkari.mc.csgo_inspects.CSGOInspects"
+		]
+	},
+	"mixins": [
+		"csgo-inspects.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

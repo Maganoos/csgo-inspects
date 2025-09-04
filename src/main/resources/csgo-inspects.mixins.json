@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "eu.magkari.mc.csgo_inspects.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"MixinHeldItemRenderer"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
