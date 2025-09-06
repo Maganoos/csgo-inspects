@@ -1,6 +1,5 @@
-# csgo-inspects
-CS:GO Inspects brings the iconic item inspection from CS:GO into Minecraft, letting you check out all your swords, tools, and armor in full 3D before you use them or show them off. With smooth camera movement, you can rotate and zoom around your items, seeing every detail up close, whether it’s a rare enchanted sword, a custom pickaxe, or a cool armor set.
-
-By default, the inspection keybind is G, giving you quick access to the feature, but it’s fully customizable in the controls menu so you can assign it to whatever key feels most comfortable. This makes inspecting your gear seamless and easy, whether you’re in the middle of crafting, exploring, or battling mobs.
-
-CS:GO Inspects is lightweight and simple to use, making it perfect for multiplayer servers or solo play. It’s a fun way to show off your collection, appreciate your hard-earned items, and interact with your Minecraft gear like a true collector.
+<!-- modrinth_exclude.start -->
+# CS:GO Inspects
+![Modrinth Downloads](https://img.shields.io/modrinth/dt/EMaWKdSE?style=for-the-badge&logo=modrinth&color=%00AF5C&link=https%3A%2F%2Fmodrinth.com%2Fmod%2FEMaWKdSE) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/maganoos/csgo-inspects/total?style=for-the-badge&logo=github&color=whitesmoke&link=https%3A%2F%2Fgithub.com%2Fmaganoos%2Fcsgo-inspects) ![Modrinth Version](https://img.shields.io/modrinth/v/EMaWKdSE?style=for-the-badge&logo=semver)
+<!-- modrinth_exclude.end -->CS:GO Inspects is a simple mod that allows you to twirl around and look at your items in a new light. I took some inspiration from CS:GO, as the name implies, however the animation is quite bad right now.
+Any and all improvements are welcome, simply submit a pull request to the linked source :)
