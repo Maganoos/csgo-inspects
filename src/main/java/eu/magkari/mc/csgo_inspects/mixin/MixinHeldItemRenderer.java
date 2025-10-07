@@ -4,6 +4,7 @@ import static eu.magkari.mc.csgo_inspects.CSGOInspects.shouldInspect;
 
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
+import net.minecraft.client.render.command.OrderedRenderCommandQueue;
 import net.minecraft.client.render.item.HeldItemRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.item.ItemDisplayContext;
@@ -26,9 +27,7 @@ public class MixinHeldItemRenderer {
             at = @At("HEAD"),
             cancellable = true)
     private void onRenderFirstPersonItem(
-            AbstractClientPlayerEntity player, float tickProgress, float pitch, Hand hand, float swingProgress,
-            ItemStack item, float equipProgress, MatrixStack matrices, VertexConsumerProvider vertexConsumers,
-            int light, CallbackInfo ci
+            AbstractClientPlayerEntity player, float tickProgress, float pitch, Hand hand, float swingProgress, ItemStack item, float equipProgress, MatrixStack matrices, OrderedRenderCommandQueue orderedRenderCommandQueue, int light, CallbackInfo ci
     ) {
         if (shouldInspect) {
             boolean right = (hand == Hand.MAIN_HAND && player.getMainArm() == Arm.RIGHT) ||
@@ -94,7 +93,7 @@ public class MixinHeldItemRenderer {
                     item,
                     right ? ItemDisplayContext.FIRST_PERSON_RIGHT_HAND : ItemDisplayContext.FIRST_PERSON_LEFT_HAND,
                     matrices,
-                    vertexConsumers,
+                    orderedRenderCommandQueue,
                     light
             );
 

@@ -16,7 +16,7 @@ public class CSGOInspects implements ClientModInitializer {
 		KeyBinding bind = KeyBindingHelper.registerKeyBinding(new KeyBinding(
 			"key.csgo-inspects.inspect",
 			GLFW.GLFW_KEY_G,
-			"key.categories.misc"
+            KeyBinding.Category.MISC
 		));
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (bind.wasPressed()) {
